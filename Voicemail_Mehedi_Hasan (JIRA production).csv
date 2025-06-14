@@ -1,0 +1,773 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Affects Version/s,Fix Version/s,Component/s,Due Date,Votes,Labels,Description,Environment,Watchers,Log Work,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Attachment,Attachment,Custom field ((backup) Browser/s),Custom field ((backup) Exists in the current implementation?),Custom field ((backup) External issue ID - old),Custom field ((backup) Integrator),Custom field ((backup) Issue Occurred On),Custom field ((backup) Issue Status Comment),Custom field ((backup) Platform),Custom field ((backup) Root of the problem),Custom field ((backup) Test Type),Custom field ((backup) Test case priority),Custom field ((backup) Type of Issue),Custom field ((backup) Work Type),"Custom field ((backup, del) Test tasks)","Custom field ((tmp, del) Build/s)","Custom field ((tmp, del?) TestCase Link)",Custom field (Account),Custom field (Actual Result),Custom field (Affected Test Cases),Custom field (Affects Build/s),Custom field (Asana link),Custom field (BT Jira ID),Custom field (BT Project),Custom field (Basecamp Link),Custom field (Billable Category),Custom field (Browser),Custom field (Browser / Environment),Custom field (Browser Version),Custom field (Build/s),Custom field (Business Unit),Custom field (CQ ID),Custom field (CS Project Coordinator),Custom field (Case Study necessity postpone date),Custom field (Client Device),Custom field (Client Device Version),Custom field (Cloud Version),Custom field (Core issue),Custom field (Created By),Custom field (Development),Custom field (End Date),Custom field (Epic Link),Custom field (Epic/Theme),Custom field (Error Type),Custom field (Expected Result),Custom field (Flagged),Custom field (Found by),Custom field (Functionality Changes?),Custom field (Handled By (SGW Tester)),Custom field (Hardware Version),Custom field (Impact),Custom field (Impacted Areas),Custom field (Importance),Custom field (Iteration),Custom field (Level),Custom field (New Original Estimate),Custom field (Next Step),Custom field (Number of candidates),Custom field (Occurrence),Custom field (Original story points),Custom field (Parent Link),Custom field (Partner Contact),Custom field (Payment Status),Custom field (Planned Efforts (FTE)),Custom field (Priority Level),Custom field (Proxy Required),Custom field (RFX Coordinator),Custom field (Rank),Custom field (Rank (Obsolete)),Custom field (Regional Coordinator),Custom field (Related Cases),Custom field (Reported Version),Custom field (Request Info From),Custom field (Revised),Custom field (Router),Custom field (SF Case No),Custom field (SGW Jira ID),Custom field (Severity/Importance),Custom field (Share with),Custom field (Solution),Sprint,Custom field (Start Date),Custom field (Supervisor),Custom field (TVS ID),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Team),Custom field (Team Role),Custom field (Test Type),Custom field (TestLink case),Custom field (Time Category),Custom field (To Attention Of),Custom field (Type of engagement),Custom field (URL),Custom field (Users),Custom field (Version To Fix),Custom field (WSJF),Custom field (Wiki Link),Custom field (Wires Link),Custom field (ZendeskID),Custom field (Обеспечение оборудованием),Comment,Comment
+Voicemail App: The user is not redirected to the payment or purchase page while clicking on the “PURCHASE FOR ONLY $2.99” button,QATC-927022,3836450,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 18:26,04/Jun/25 22:06,14/Jun/25 10:06,04/Jun/25 22:06,1,,Voicemail,,0,,"*Steps:*
+ # Install and launch the ""Get Personal Voicemail"" application.
+
+ # On the welcome popup, click the *""PURCHASE FOR ONLY $2.99""* button
+
+*Actual result:*  The user is not redirected to the payment or purchase page while clicking on the “PURCHASE FOR ONLY $2.99” button - see here [^Screen_recording_20250603_212624.mp4]
+
+*Expected result:* The button should redirect the user to the correct payment screen for performing the payment ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 6:26 PM;m13.hasan;Screen_recording_20250603_212624.mp4;https://jira.a1qa.com/secure/attachment/2651863/Screen_recording_20250603_212624.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if48uo:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Voicemail App: No pop-up appears after the trial expires, and the user can continue to use all features without any restriction",QATC-927021,3836444,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 18:11,04/Jun/25 22:06,05/Jun/25 23:12,04/Jun/25 22:06,1,,Voicemail,,0,,"*Steps:*
+ # Install and open the Get Personal application
+ # Use the app until the trial period expires
+ # Monitor for any pop-up or access restriction after expiry
+
+*Actual result:* No pop-up appears after the trial expires, and the user can continue to use all features without any restriction
+
+*Expected result:* A notification should appear stating “Your trial period expires in 3 DAYS / PURCHASE” (as shown in the design), and the user should be restricted from using features after the trial ends - see here [^Voicemail_trial_v1b.png] & [^Voicemail_trial_v1c.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 6:07 PM;m13.hasan;Voicemail_trial_v1b.png;https://jira.a1qa.com/secure/attachment/2651862/Voicemail_trial_v1b.png,03/Jun/25 6:07 PM;m13.hasan;Voicemail_trial_v1c.png;https://jira.a1qa.com/secure/attachment/2651861/Voicemail_trial_v1c.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if48tk:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Voicemail App: On installing the application, the pop-up shows: “Try Voicemail FREE for 2 weeks” instead of 3 days as specified",QATC-927018,3836364,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 17:19,04/Jun/25 22:08,05/Jun/25 23:13,04/Jun/25 22:08,1,,Voicemail,,0,,"*Steps:*
+ # Begin installation of the application
+ # Observe the trial period duration displayed after the installation 
+
+*Actual result:* On installing the application, the pop-up shows: “Try Voicemail FREE for 2 weeks” instead of 3 days as specified - See here [^Screenshot_20250603_191548.png]
+
+*Expected result:* As per the approved design specification, the trial period should be clearly mentioned as: “Try Voicemail FREE for 3 days” ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,03/Jun/25 5:17 PM;m13.hasan;Screenshot_20250603_191548.png;https://jira.a1qa.com/secure/attachment/2651845/Screenshot_20250603_191548.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if48bs:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings: The scrollbar and contact list overlap with each other,QATC-927014,3836337,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 17:05,04/Jun/25 23:00,14/Jun/25 10:06,04/Jun/25 23:00,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Edit a greeting 
+
+ # Tap Select a recepient/group
+
+ # Observe the alignment between the scrollbar and the contact list
+
+*Actual result:* The scrollbar and contact list overlap with each other - see here [^Screenshot_20250603_194841.png]
+
+*Expected result:* The scrollbar should be properly aligned beside the contact list without any overlap, maintaining consistent layout and readability - see here [^Voicemail_contacts_v1c.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 4:56 PM;m13.hasan;Screenshot_20250603_194841.png;https://jira.a1qa.com/secure/attachment/2651832/Screenshot_20250603_194841.png,03/Jun/25 4:56 PM;m13.hasan;Voicemail_contacts_v1c.png;https://jira.a1qa.com/secure/attachment/2651831/Voicemail_contacts_v1c.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if485s:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings: Contacts and groups remain selected after navigating back from the selection screen,QATC-927012,3836323,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 16:44,04/Jun/25 23:00,04/Jun/25 05:11,04/Jun/25 23:00,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Enter any of the greetings 
+ # Tap to Select Recipients/ Select Group
+ # Select any contacts or group
+ # Press the Back button without saving
+
+*Actual result:* Contacts and groups remain selected after navigating back from the selection screen - see here [^minor.mp4]
+
+*Expected result:* Selections should be cleared when navigating back without confirming or saving, ensuring a fresh selection state on next entry","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,03/Jun/25 4:40 PM;m13.hasan;minor.mp4;https://jira.a1qa.com/secure/attachment/2651825/minor.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if482o:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Front interface: Divider between ""Greetings"" and ""Quick Status"" tabs is not present as required in the design specification",QATC-927002,3836273,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 15:43,04/Jun/25 23:00,04/Jun/25 05:11,04/Jun/25 23:00,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Observe the top navigation bar between the Greetings and Quick Status tabs
+
+*Actual result:* Divider between ""Greetings"" and ""Quick Status"" tabs is not present as required in the design specification - see here [^Screenshot_20250603_163600.png]
+
+*Expected result:* As per the design file, there should be a visible divider line between the two tabs for better section separation - see here [^Voicemail_status_v1.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,03/Jun/25 1:36 PM;m13.hasan;Screenshot_20250603_163600.png;https://jira.a1qa.com/secure/attachment/2651786/Screenshot_20250603_163600.png,03/Jun/25 1:36 PM;m13.hasan;Voicemail_status_v1.png;https://jira.a1qa.com/secure/attachment/2651787/Voicemail_status_v1.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if47sw:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: The playback time does not highlight during recording a new audio message as required in the design specification,QATC-926984,3836194,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 13:30,04/Jun/25 22:56,04/Jun/25 05:18,04/Jun/25 22:56,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status tab
+ # Create a new one
+ # Record the audio message
+ # Observe whether the playback time dynamically highlights while running
+
+*Actual result:* The playback time does not highlight during recording a new audio message as required in the design specification - see here [^Minor GUI - time stamp.mp4]
+
+*Expected result:* The playback time should highlight dynamically while the audio is playing, as per the design requirements - see here [^Voicemail_record_v1_1c.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,03/Jun/25 1:28 PM;m13.hasan;Minor GUI - time stamp.mp4;https://jira.a1qa.com/secure/attachment/2651708/Minor+GUI+-+time+stamp.mp4,03/Jun/25 1:27 PM;m13.hasan;Voicemail_record_v1_1c.png;https://jira.a1qa.com/secure/attachment/2651709/Voicemail_record_v1_1c.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if47bk:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings: The pointer appears before the search logo, not after it as required in the design specification",QATC-926971,3836137,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 12:03,04/Jun/25 22:55,04/Jun/25 05:11,04/Jun/25 22:55,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings section
+ # Tap to add or edit a greeting
+ # Tap to ""Select a group/ Select a recepient""
+ # When redirected to the Contact List page, observe the search bar
+
+*Actual result:* The pointer appears before the search logo, not after it as required in the design specification - see here [^Minor- Functional- The pointer.mp4]
+
+*Expected result:* The pointer should be positioned after the search logo, following the design specifications","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 12:03 PM;m13.hasan;Minor- Functional- The pointer.mp4;https://jira.a1qa.com/secure/attachment/2651655/Minor-+Functional-+The+pointer.mp4,03/Jun/25 12:47 PM;m13.hasan;Screenshot 2025-06-03 142316.png;https://jira.a1qa.com/secure/attachment/2651683/Screenshot+2025-06-03+142316.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if46zk:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Inconsistent behavior of pause/resume button when frequently toggled during playing,QATC-926969,3836130,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Cannot Reproduce,,m13.hasan,m13.hasan,03/Jun/25 11:56,04/Jun/25 22:55,04/Jun/25 05:11,04/Jun/25 22:55,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to any Greeting or Quick Status
+ # Play the voice message
+ # Repeatedly click the Pause and Resume buttons in quick succession during playing
+
+*Actual result:*  Inconsistent behavior of the pause/resume button when frequently toggled during playing - see here [^Minor- GUI pause button.mp4]
+
+*Expected result:* The Pause/Resume button should respond accurately to user input every time ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 11:54 AM;m13.hasan;Minor- GUI pause button.mp4;https://jira.a1qa.com/secure/attachment/2651649/Minor-+GUI+pause+button.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if46y0:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings: Select Recepients: The Search field is missing the required underline as specified in the design file,QATC-926959,3836100,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 11:04,04/Jun/25 22:41,04/Jun/25 05:11,04/Jun/25 22:41,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the GREETINGS > Select Recepients
+ # Locate the Search field at the top of the screen
+ # Observe whether the underline is present
+
+*Actual result:* The Search field is missing the required underline as specified in the design file - see here [^Minor- GUI Search.mp4]
+
+*Expected result:* The Search field should contain an underline below the placeholder according to the design specifications - see here [^Voicemail_contacts_v1b.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 11:03 AM;m13.hasan;Minor- GUI Search.mp4;https://jira.a1qa.com/secure/attachment/2651614/Minor-+GUI+Search.mp4,03/Jun/25 10:08 AM;m13.hasan;Voicemail_contacts_v1b.png;https://jira.a1qa.com/secure/attachment/2651615/Voicemail_contacts_v1b.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if46rc:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Delete icon appears as a trash bin instead of a cross as per design guideline,QATC-926944,3836068,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 09:58,04/Jun/25 23:00,04/Jun/25 05:11,04/Jun/25 23:00,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Create New Greeting
+
+ # Observe the icon next to the Discard button
+
+*Actual result:* Delete icon appears as a trash bin instead of a cross as per design guideline - see here [^Screenshot_20250603_123358.png]
+
+*Expected result:* The Discard button should use a cross (×) icon to match the intended UI design - see here [^Voicemail_record_v1_1d.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 9:57 AM;m13.hasan;Screenshot_20250603_123358.png;https://jira.a1qa.com/secure/attachment/2651575/Screenshot_20250603_123358.png,03/Jun/25 9:57 AM;m13.hasan;Voicemail_record_v1_1d.png;https://jira.a1qa.com/secure/attachment/2651576/Voicemail_record_v1_1d.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if46kg:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings & Quick Status: Recording stops after 8.9 seconds but interface continues to show ""RECORDING"" with active Resume button ",QATC-926936,3836058,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 09:40,04/Jun/25 22:59,04/Jun/25 06:34,04/Jun/25 22:59,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Create New Greeting or Quick Status
+ # Start recording a voice message
+ # Continue recording beyond 8.9 seconds
+
+*Actual result:* Recording stops after 8.9 seconds but interface continues to show ""RECORDING"" with active Resume button - see here [^Minor-recording.mp4]
+
+*Expected result:* The UI should stop displaying the recording state when the actual recording stops and reset the resume status accordingly","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 9:33 AM;m13.hasan;Minor-recording.mp4;https://jira.a1qa.com/secure/attachment/2651567/Minor-recording.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if46i8:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Play button remains unselected when a greeting or quick status is selected,QATC-926933,3836053,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 09:29,04/Jun/25 22:59,04/Jun/25 05:11,04/Jun/25 22:59,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Greetings or Quick Status
+ # Tap on any voice message to begin playback
+ # Observe the play button during and after selection
+
+*Actual result:* Play button remains unselected when a greeting or quick status is selected - see here [^Screenshot_20250603_121053.png]
+
+*Expected result:* all the elements, including the play button should be selected while selecting any greetings or quick status"," 
+
+*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 9:29 AM;m13.hasan;Screenshot_20250603_121053.png;https://jira.a1qa.com/secure/attachment/2651562/Screenshot_20250603_121053.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if46h4:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings & Quick Status: ""Discard"" and ""Save"" buttons should be in all caps (""DISCARD"", ""SAVE"") as per design",QATC-926928,3836044,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 09:17,04/Jun/25 22:59,04/Jun/25 05:18,04/Jun/25 22:59,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Create New Greeting or Quick Status
+
+ # Record or enter information and observe the action buttons
+
+*Actual result:*  ""Discard"" and ""Save"" buttons should be in all caps (""DISCARD"", ""SAVE"") as per design - see here [^Screenshot_20250603_114736-1.png] & [^Screenshot_20250603_114719-1.png]
+
+*Expected result:* The buttons should be labeled in all uppercase as ""DISCARD"" and ""SAVE"" to match the design guidelines - see here [^Voicemail_record_v1_1d.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,03/Jun/25 9:16 AM;m13.hasan;Screenshot_20250603_114719-1.png;https://jira.a1qa.com/secure/attachment/2651553/Screenshot_20250603_114719-1.png,03/Jun/25 9:16 AM;m13.hasan;Screenshot_20250603_114736-1.png;https://jira.a1qa.com/secure/attachment/2651552/Screenshot_20250603_114736-1.png,03/Jun/25 9:16 AM;m13.hasan;Voicemail_record_v1_1d.png;https://jira.a1qa.com/secure/attachment/2651554/Voicemail_record_v1_1d.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if46f4:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,"03/Jun/25 9:43 AM;m13.hasan;*Steps in corrected order:* 
+ # Open the Get Personal Voicemail app
+ # Navigate to Create New Greeting or Quick Status
+ # Record or enter information and observe the action buttons;;;",
+Greetings & Quick Status: Elements such as text and icons are not centered within the Save and Discard buttons as required design,QATC-926923,3836037,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,03/Jun/25 09:03,04/Jun/25 23:00,04/Jun/25 05:11,04/Jun/25 23:00,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Greetings or Quick Status tab
+ # Create a new greeting or status
+ # Observe the alignment of text and icon in Save and Discard buttons
+ # Compare their placement with the required design file
+
+*Actual result:* Elements such as text and icons are not centered within the Save and Discard buttons as required design - see here [^Screenshot_20250603_114736.png] & [^Screenshot_20250603_114719.png]
+
+*Expected result:* All elements should be perfectly centered within their respective buttons, ensuring consistency with the design file - see here [Voicemail_record_v1_1d.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,03/Jun/25 8:50 AM;m13.hasan;Screenshot_20250603_114719.png;https://jira.a1qa.com/secure/attachment/2651544/Screenshot_20250603_114719.png,03/Jun/25 8:50 AM;m13.hasan;Screenshot_20250603_114736.png;https://jira.a1qa.com/secure/attachment/2651543/Screenshot_20250603_114736.png,03/Jun/25 8:50 AM;m13.hasan;Voicemail_record_v1_1d.png;https://jira.a1qa.com/secure/attachment/2651542/Voicemail_record_v1_1d.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if46dk:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings: ""GET PERSONAL"" appears instead of ""Select Group"" in the Contact List page",QATC-926781,3835868,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m13.hasan,m13.hasan,02/Jun/25 22:20,04/Jun/25 22:59,04/Jun/25 05:11,04/Jun/25 22:59,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings section
+ # Tap to add or edit a greeting
+ # Tap to ""Select a group""
+ # When redirected to the Contact List page, observe the header text
+
+*Actual result:* ""GET PERSONAL"" appears instead of ""Select Group"" in the Contact List page - see here [^Minor - GUI.mp4]
+
+*Expected result:* The header should display ""Select Group"" to clearly indicate the purpose of the page - see here [^Voicemail_groups_v1a.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 10:17 PM;m13.hasan;Minor - GUI.mp4;https://jira.a1qa.com/secure/attachment/2651335/Minor+-+GUI.mp4,02/Jun/25 10:17 PM;m13.hasan;Voicemail_groups_v1a.png;https://jira.a1qa.com/secure/attachment/2651334/Voicemail_groups_v1a.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if45c0:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:59 PM;e.sheremetyev;QATC-926737;;;,
+Greetings & Quick Status: The playback time does not highlight during audio playback as required in the design specification,QATC-926780,3835865,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 22:13,04/Jun/25 22:58,04/Jun/25 06:34,04/Jun/25 22:58,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status tab
+ # Select any of them from the list
+ # Play the audio message
+ # Observe whether the playback time dynamically highlights while running
+
+*Actual result:* The playback time does not highlight during audio playback as required in the design specification - see here [^The playback time should be highlighted.mp4]
+
+*Expected result:* The playback time should highlight dynamically while the audio is playing, as per the design requirements - see here [^Voicemail_record_v1_1d.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 10:10 PM;m13.hasan;The playback time should be highlighted.mp4;https://jira.a1qa.com/secure/attachment/2651332/The+playback+time+should+be+highlighted.mp4,02/Jun/25 10:10 PM;m13.hasan;Voicemail_record_v1_1d.png;https://jira.a1qa.com/secure/attachment/2651331/Voicemail_record_v1_1d.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if45bc:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings & Quick Status: Displays ""STOPED"" instead of ""PAUSE"" during voice message recording",QATC-926777,3835861,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 21:58,04/Jun/25 22:58,14/Jun/25 10:17,04/Jun/25 22:58,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Create New Greeting or Quick Status
+ # Start recording a new voice message
+ # Observe the button during the recording process (pause and resume)
+
+*Actual result:* Displays ""STOPED"" instead of ""PAUSE"" during voice message recording - see here [^Shows Stoped instead of paused-1.mp4]
+
+*Expected result:* The label should display ""PAUSE"" as per the design specification - see here [^Voicemail_record_v1_1u-1.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,02/Jun/25 9:57 PM;m13.hasan;Shows Stoped instead of paused-1.mp4;https://jira.a1qa.com/secure/attachment/2651325/Shows+Stoped+instead+of+paused-1.mp4,02/Jun/25 9:57 PM;m13.hasan;Voicemail_record_v1_1u-1.png;https://jira.a1qa.com/secure/attachment/2651324/Voicemail_record_v1_1u-1.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if45ag:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: The Progress bar does not visually indicate the length of the ongoing recording,QATC-926743,3835811,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 20:39,04/Jun/25 22:58,04/Jun/25 06:34,04/Jun/25 22:58,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Create New Greeting or Quick Status
+ # Start recording a voice message
+ # Observe the progress bar during the recording process
+
+*Actual result:* The Progress bar does not visually indicate the length of the ongoing recording - see here [^minor_aa.mp4]
+
+*Expected result:* The progress bar should have a dynamic highlighted section that increases in real-time to reflect the duration of the recording as it progresses - see here [^Voicemail_record_v1_1b.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 8:35 PM;m13.hasan;minor_aa.mp4;https://jira.a1qa.com/secure/attachment/2651270/minor_aa.mp4,02/Jun/25 8:18 PM;m13.hasan;Voicemail_record_v1_1b.png;https://jira.a1qa.com/secure/attachment/2651271/Voicemail_record_v1_1b.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if44zc:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:58 PM;e.sheremetyev;GUI;;;,
+"Greetings: ""GET PERSONAL"" appears instead of ""New Greeting"" in the header of the page",QATC-926737,3835804,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 20:15,04/Jun/25 22:57,14/Jun/25 10:17,04/Jun/25 22:57,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings section
+ # Tap to Create new greeting
+ # When redirected to the next page, observe the header text
+
+*Actual result:* ""GET PERSONAL"" appears instead of ""New Greeting"" in the header of the page - see here [^Should show New Greeting here .mp4]
+
+*Expected result:* The header should display ""New Greeting"" to clearly indicate the purpose of the page - see here [^Voicemail_contacts_v1a.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 8:12 PM;m13.hasan;Should show New Greeting here .mp4;https://jira.a1qa.com/secure/attachment/2651262/Should+show+New+Greeting+here+.mp4,02/Jun/25 8:10 PM;m13.hasan;Voicemail_record_v1_1a.png;https://jira.a1qa.com/secure/attachment/2651263/Voicemail_record_v1_1a.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if44xs:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings: ""GET PERSONAL"" appears instead of ""Select Recepients"" in the Contact List page",QATC-926734,3835801,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 20:08,04/Jun/25 22:57,14/Jun/25 10:17,04/Jun/25 22:57,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings section
+ # Tap to add or edit a greeting
+ # Tap to ""Select a recepient""
+ # When redirected to the Contact List page, observe the header text
+
+*Actual result:* ""GET PERSONAL"" appears instead of ""Select Recepients"" in the Contact List page - see here [^Select Recepients should show here.mp4]
+
+*Expected result:* The header should display ""Select Recepients"" to clearly indicate the purpose of the page - see here [^Voicemail_contacts_v1a.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,02/Jun/25 7:58 PM;m13.hasan;Select Recepients should show here.mp4;https://jira.a1qa.com/secure/attachment/2651259/Select+Recepients+should+show+here.mp4,02/Jun/25 7:58 PM;m13.hasan;Voicemail_contacts_v1a.png;https://jira.a1qa.com/secure/attachment/2651258/Voicemail_contacts_v1a.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if44x4:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings & Quick Status: The label displays ""Select a recepient"" instead of ""Select Recepients"" while creating a new one",QATC-926727,3835793,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 19:55,04/Jun/25 22:56,14/Jun/25 10:17,04/Jun/25 22:56,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app-
+ # Navigate to any of the Greetings or Quick Status 
+ # Locate the label displaying ""Select a recepient""
+ # Compare with the expected text in the design specification
+
+*Actual result:*  The label displays ""Select a recepient"" instead of ""Select Recepients"" while creating new one - see here [^minor.mp4]
+
+*Expected result:* The label should read ""Select Recepients"" instead of ""Select a recepient"", as specified in the design file - see here [^Voicemail_greeting_settings_v1_1a.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,02/Jun/25 7:52 PM;m13.hasan;minor.mp4;https://jira.a1qa.com/secure/attachment/2651248/minor.mp4,02/Jun/25 7:51 PM;m13.hasan;Voicemail_greeting_settings_v1_1a.png;https://jira.a1qa.com/secure/attachment/2651249/Voicemail_greeting_settings_v1_1a.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if44vc:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: The app allows saving the new item even though the Title field is empty,QATC-926719,3835784,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 19:45,04/Jun/25 22:06,05/Jun/25 23:13,04/Jun/25 22:06,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Create New Greeting or Create Quick Status
+ # Leave the Title field blank
+ # Fill in other required fields
+ # Tap Save
+
+*Actual result:* The app allows saving the new item even though the Title field is empty - see here [^Screen_recording_20250602_224310.mp4]
+
+*Expected result:* The Title field should be a mandatory input. If left blank, a validation message should appear, and should not be saved until the title is provided - see here [^","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 7:43 PM;m13.hasan;Screen_recording_20250602_224310.mp4;https://jira.a1qa.com/secure/attachment/2651236/Screen_recording_20250602_224310.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if44tc:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:06 PM;e.sheremetyev;average;;;,
+"Greetings & Quick Status: The toggle switch and text alignment appear above the middle, rather than being centered as per the design requirements",QATC-926704,3835762,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 19:18,04/Jun/25 22:56,14/Jun/25 10:17,04/Jun/25 22:56,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status tab
+ # Observe the position of the toggle switch and text alignment
+ # Compare their placement to the design specification
+
+*Actual result:* The toggle switch and text alignment appear above the middle, rather than being centered as per the design requirements - see here [^Screenshot 2025-06-02 214542.png]
+
+*Expected result:* The toggle switch and text should be perfectly centered to match the design file - see here [^Voicemail_status_v1.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 7:14 PM;m13.hasan;Screenshot 2025-06-02 214542.png;https://jira.a1qa.com/secure/attachment/2651215/Screenshot+2025-06-02+214542.png,02/Jun/25 7:14 PM;m13.hasan;Voicemail_status_v1.png;https://jira.a1qa.com/secure/attachment/2651216/Voicemail_status_v1.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if44og:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Time dropdown shows current device time instead of previously selected time when modifying,QATC-926694,3835745,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 18:53,04/Jun/25 23:00,14/Jun/25 10:17,04/Jun/25 23:00,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to Greetings or Quick Status
+ # Set a specific time for the greeting/status
+ # Reopen the time dropdown to modify the time
+
+*Actual result:* Time dropdown shows current device time instead of the previously selected time when modifying - see here [^Enhancement.mp4]
+
+*Expected result:* The time dropdown should display the previously selected time by default, allowing the user to modify it without re-selecting from the beginning","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,02/Jun/25 6:52 PM;m13.hasan;Enhancement.mp4;https://jira.a1qa.com/secure/attachment/2651196/Enhancement.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if44ko:,9223372036854775807,,,,,,,,,5-Enhancement,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings & Quick Status: Playback button resets while scrolling, but voice continues playing and clicking again overrides ongoing playback",QATC-926653,3835660,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m13.hasan,m13.hasan,02/Jun/25 17:32,04/Jun/25 22:39,05/Jun/25 23:15,04/Jun/25 22:39,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to either Greetings or Quick Status
+ # Play any voice message
+ # Scroll down the screen while the message is playing
+ # Observe the playback button state and tap it again
+
+*Actual result:* Playback button resets while scrolling, but voice continues playing, and clicking again overrides ongoing playback - see here [^Average19.mp4]
+
+*Expected result:* The playback button should reflect the actual playback state. Scrolling should not reset the button visually. Tapping the playback button should pause or resume the same message without overlapping audio","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 5:32 PM;m13.hasan;Average19.mp4;https://jira.a1qa.com/secure/attachment/2651119/Average19.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if4420:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Cursor in title field appears at the beginning during editing instead of at the end of the text,QATC-926523,3835280,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 10:22,04/Jun/25 22:40,14/Jun/25 10:17,04/Jun/25 22:40,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to any of the Greeting or Quick Status
+ # Navigate to the title field
+ # Try to edit the saved title
+
+*Actual result:* Cursor in title field appears at the beginning during editing instead of at the end of the text - see here [^Average18.mp4]
+
+*Expected result:* The cursor should automatically appear at the end of the existing text when editing, allowing users to append or modify it easily","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,02/Jun/25 10:22 AM;m13.hasan;Average18.mp4;https://jira.a1qa.com/secure/attachment/2650812/Average18.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if41sw:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Quick Status: ON/OFF toggle is replaced by radio button selection, not matching the specified behavior",QATC-926516,3835246,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 09:35,04/Jun/25 22:38,05/Jun/25 23:15,04/Jun/25 22:38,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Quick Status tab
+ # Observe the UI control used for activating status options
+
+*Actual result:* ON/OFF toggle is replaced by radio button selection, not matching the specified behavior - see here [^Image 2025-06-02 at 12.20.09_956ef785.png]
+
+*Expected result:* Each Quick Status should have an independent ON/OFF toggle switch to allow enabling/disabling specific statuses, as per the specification - see here [^Voicemail_status_v1.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 9:31 AM;m13.hasan;Image 2025-06-02 at 12.20.09_956ef785.png;https://jira.a1qa.com/secure/attachment/2650799/Image+2025-06-02+at+12.20.09_956ef785.png,02/Jun/25 9:34 AM;m13.hasan;Voicemail_status_v1.png;https://jira.a1qa.com/secure/attachment/2650798/Voicemail_status_v1.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if41lc:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:38 PM;e.sheremetyev;minor;;;,
+"Header Label: Displays ""GET PERSONAL"" Instead of  ""VOICEMAIL"" in the header section as specified",QATC-926514,3835242,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,02/Jun/25 08:55,04/Jun/25 22:39,14/Jun/25 10:17,04/Jun/25 22:39,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status section
+ # Navigate to a different section/page within the app and pay attention to the header section
+
+*Actual result:* Header Label: Displays ""GET PERSONAL"" Instead of  ""VOICEMAIL"" in the header section as specified - see here [^Voice Mail is not showing.mp4]
+
+*Expected result:* The header should consistently display the actual app name ""VOICEMAIL"" across all screens - see here [^Voicemail_status_header.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,02/Jun/25 8:49 AM;m13.hasan;Voice Mail is not showing.mp4;https://jira.a1qa.com/secure/attachment/2650796/Voice+Mail+is+not+showing.mp4,02/Jun/25 8:51 AM;m13.hasan;Voicemail_status_header.png;https://jira.a1qa.com/secure/attachment/2650795/Voicemail_status_header.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if41kg:,9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Voice message continues playing when the app is minimized or the user navigates to another page,QATC-926472,3835175,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m13.hasan,m13.hasan,02/Jun/25 00:10,04/Jun/25 22:38,05/Jun/25 23:15,04/Jun/25 22:38,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status section
+ # Tap Play on any voice message from the list
+ # While the message is still playing, minimize the app or navigate to a different section/page within the app
+
+*Actual result:* Voice message continues playing when the app is minimized or the user navigates to another page - see here [^Average16.mp4]
+
+*Expected result:* Playback should automatically stop or pause when the user minimizes the app or navigates away from the playback screen","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,02/Jun/25 12:09 AM;m13.hasan;Average16.mp4;https://jira.a1qa.com/secure/attachment/2650744/Average16.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if415k:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Settings: Active Service Toggle: Page reloads on each toggle action instead of updating status dynamically,QATC-926469,3835172,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m13.hasan,m13.hasan,01/Jun/25 23:59,04/Jun/25 22:34,05/Jun/25 23:15,04/Jun/25 22:34,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the three dots at the top right corner
+ # Settings > Active Service 
+ # Toggle the Active/Inactive switch (ON or OFF)
+ # Observe the behavior of the interface
+
+*Actual result:*  Page reloads on each toggle action instead of updating status dynamically - see here [^Average15.mp4]
+
+*Expected result:* Toggling the Active Service should update the status instantly without reloading the entire page, ensuring a smoother and more responsive user experience","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,01/Jun/25 11:59 PM;m13.hasan;Average15.mp4;https://jira.a1qa.com/secure/attachment/2650739/Average15.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if414w:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:34 PM;e.sheremetyev;this feature is not implemented yet;;;,
+"Greetings: Select Recepients: The Search field is missing the required ""Search Contact"" text as specified in the design file",QATC-926464,3835167,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 23:30,04/Jun/25 22:32,05/Jun/25 23:16,04/Jun/25 22:32,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the GREETINGS > Select Recepients
+ # Locate the Search field at the top of the screen
+ # Observe whether the placeholder text ""Search Contact"" is present
+
+*Actual result:* The Search field is missing the required ""Search Contact"" text as specified in the design file - see here [^Screenshot_20250602_021924.png]
+
+*Expected result:* The Search field should contain ""Search Contact"" as a placeholder text according to the design specifications - see here [^Voicemail_contacts_v1b.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,01/Jun/25 11:20 PM;m13.hasan;Screenshot_20250602_021924.png;https://jira.a1qa.com/secure/attachment/2650731/Screenshot_20250602_021924.png,01/Jun/25 11:17 PM;m13.hasan;Voicemail_contacts_v1b.png;https://jira.a1qa.com/secure/attachment/2650732/Voicemail_contacts_v1b.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if413s:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:32 PM;e.sheremetyev;minor;;;,
+Greetings & Quick Status: The Restart button does not restart the audio from the beginning while clicking,QATC-926461,3835164,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Cannot Reproduce,,m13.hasan,m13.hasan,01/Jun/25 23:13,04/Jun/25 22:30,05/Jun/25 23:16,04/Jun/25 22:30,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status tab
+ # Start playing an audio inside any specific greeting or status
+ # Click the Restart button while the audio is playing
+ # Observe whether the audio restarts from the beginning
+
+*Actual result:* The Restart button does not restart the audio from the beginning; instead, it resumes playback from the current position when clicked - see here [^Screen_recording_20250602_020700.mp4]
+
+*Expected result:* Clicking the Restart button should reset the playback to 0:00 and start the audio from the beginning","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,01/Jun/25 11:08 PM;m13.hasan;Screen_recording_20250602_020700.mp4;https://jira.a1qa.com/secure/attachment/2650727/Screen_recording_20250602_020700.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if4134:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: The greeting/status does not highlight or show an audio progress bar while playing audio,QATC-926459,3835162,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 22:58,04/Jun/25 22:30,05/Jun/25 23:16,04/Jun/25 22:30,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status tab
+ # Click on any greeting or status item
+ # Start playing the audio 
+ # Observe whether it highlights, and if an audio progress bar appears
+
+*Actual result:* The greeting/status does not highlight or show an audio progress bar while playing audio - see here [^Average12.mp4]
+
+*Expected result:* The greeting/status should highlight when played and an audio progress bar should be displayed to show the playback duration - see here [^Voicemail_disabled_service_v1a.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,01/Jun/25 10:56 PM;m13.hasan;Average12.mp4;https://jira.a1qa.com/secure/attachment/2650723/Average12.mp4,01/Jun/25 10:55 PM;m13.hasan;Voicemail_disabled_service_v1a.png;https://jira.a1qa.com/secure/attachment/2650724/Voicemail_disabled_service_v1a.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if412o:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:30 PM;e.sheremetyev;minor;;;,
+Greetings: The group name does not appear after saving ,QATC-926423,3835123,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 19:55,04/Jun/25 22:26,05/Jun/25 23:16,04/Jun/25 22:26,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to GREETINGS → Create New Greeting
+ # Select a group and save the greeting
+ # Verify if the group name is displayed in the saved greeting
+
+*Actual result:* The group name does not appear after saving in any greetings - see here [^Average11.mp4] & [^Screenshot_20250601_223221.png]
+
+*Expected result:* The selected group name should be displayed in the saved greeting ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,01/Jun/25 7:36 PM;m13.hasan;Average11.mp4;https://jira.a1qa.com/secure/attachment/2650665/Average11.mp4,01/Jun/25 7:36 PM;m13.hasan;Screenshot_20250601_223221.png;https://jira.a1qa.com/secure/attachment/2650664/Screenshot_20250601_223221.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40u0:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings & Quick Status: Multiple voice messages play at the same time, overlapping each other, with no automatic stop of the previously playing audio",QATC-926418,3835102,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 19:27,04/Jun/25 22:26,05/Jun/25 23:16,04/Jun/25 22:26,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings section
+ # Tap Play on any greeting to start audio message
+ # Without stopping the first playback, tap Play on another greeting
+ # Repeat the same steps in the Quick Status section while current messages are playing
+
+*Actual result:* Multiple voice messages play at the same time, overlapping each other, with no automatic stop of the previously playing audio - see here [^Average10.mp4]
+
+*Expected result:* Only one audio message should be allowed to play at a time across both Greetings and Quick Status","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,01/Jun/25 7:24 PM;m13.hasan;Average10.mp4;https://jira.a1qa.com/secure/attachment/2650657/Average10.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40pc:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Title fields accept input beyond 30 characters instead of 30-character as specified,QATC-926381,3835049,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 11:56,04/Jun/25 22:09,05/Jun/25 23:17,04/Jun/25 22:09,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to any of the Greetings or Quick Status
+ # Enter a title that exceeds 30 characters
+
+*Actual result:* Title fields accept input beyond 30 characters instead of 30 characters as specified - see here [^Average9.mp4]
+
+*Expected result:* The field should restrict input to a maximum of 30 characters and either block extra input or show a validation message when the limit is exceeded","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,01/Jun/25 11:56 AM;m13.hasan;Average9.mp4;https://jira.a1qa.com/secure/attachment/2650587/Average9.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40dk:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Previous message continues playing when entering into a specific greeting or status and playing it again,QATC-926379,3835047,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 11:44,04/Jun/25 22:10,05/Jun/25 23:17,04/Jun/25 22:10,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status section
+ # Tap Play on any voice message
+ # While it’s playing, enter into the same item by tapping it
+ # Tap Play again from inside the opened view
+
+*Actual result:* Previous message continues playing when entering into a specific greeting or status and playing it again - see here [^Average8.mp4]
+
+*Expected result:* When entering into the item and playing it again, the previous playback should automatically stop, allowing only one audio instance to play at a time","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,01/Jun/25 11:43 AM;m13.hasan;Average8.mp4;https://jira.a1qa.com/secure/attachment/2650585/Average8.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40d4:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Scrolling resets the playback button state while voice message continues playing,QATC-926368,3835036,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 06:43,04/Jun/25 22:26,05/Jun/25 23:17,04/Jun/25 22:26,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings or Quick Status section
+ # Tap Play on any item to start audio playback
+ # While the audio is still playing, scroll down through the list
+
+*Actual result:* Scrolling resets the playback button state while the voice message continues playing - see here [^Average7.mp4]
+
+*Expected result:* The playback button should accurately reflect the current state, even while scrolling. If the audio is playing, the button should remain active","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,01/Jun/25 6:43 AM;m13.hasan;Average7.mp4;https://jira.a1qa.com/secure/attachment/2650575/Average7.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40ao:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: Scrolling while playing a Greeting or Status auto-enables playback buttons of other items,QATC-926367,3835035,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 06:13,04/Jun/25 22:14,05/Jun/25 23:17,04/Jun/25 22:14,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to either the Greetings or Quick Status section
+ # Tap Play on any greeting or status to begin audio playback
+ # While the audio is playing, scroll down through the list of items
+ # Observe the behavior of the playback buttons for other entries
+
+*Actual result:* Scrolling while playing a Greeting or Status auto-enables playback buttons of other items - see here [^Average6.mp4]
+
+*Expected result:* Only the currently playing item should show an active playback state. Scrolling should not affect the state of other playback buttons","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,01/Jun/25 6:13 AM;m13.hasan;Average6.mp4;https://jira.a1qa.com/secure/attachment/2650574/Average6.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40ag:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings & Quick Status: More than 20 entries can be created despite maximum limit being 20 as per requirements,QATC-926366,3835034,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 05:55,04/Jun/25 22:26,05/Jun/25 23:17,04/Jun/25 22:26,1,,Voicemail,,0,,"*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings section
+
+ # Create and save 20 different greetings
+
+ # Attempt to create and save additional greetings
+
+ # Repeat the same in the Quick Status section
+
+*Actual result:* More than 20 entries can be created despite the maximum limit being 20 as per the requirements - see here [^Average5.mp4]
+
+*Expected result:* The app should restrict creation of greetings or quick statuses to a maximum of 20 and should display a warning message ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,01/Jun/25 5:54 AM;m13.hasan;Average5.mp4;https://jira.a1qa.com/secure/attachment/2650573/Average5.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40a8:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,"01/Jun/25 7:57 PM;m13.hasan;*Steps in corrected order:* 
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings section
+ # Create and save 20 different greetings
+ # Attempt to create and save additional greetings
+ # Repeat the same in the Quick Status section;;;",
+Greetings: 0.0 sec recording duration is allowed when creating a new Greeting,QATC-926365,3835033,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,01/Jun/25 05:44,04/Jun/25 22:26,05/Jun/25 23:17,04/Jun/25 22:26,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Greetings 
+ # Tap Create new greeting and immediately stop the recording without speaking (duration: 0.0 sec)
+ # Save the recording
+ # Observe the newly created greeting or status
+
+*Actual result:* 0.0 sec recording duration is allowed when creating a new Greeting - see here [^Average4.mp4]
+
+*Expected result:* The application should prevent saving recordings with 0.0 seconds duration and should display a warning or validation message","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,01/Jun/25 5:40 AM;m13.hasan;Average4.mp4;https://jira.a1qa.com/secure/attachment/2650572/Average4.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if40a0:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings: Audio continues to play after deleting any of the greetings until it finishes,QATC-926353,3835008,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 23:16,04/Jun/25 22:08,05/Jun/25 23:17,04/Jun/25 22:08,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to any of the Greetings or Quick Status
+ # Tap the Play button to start audio playback 
+ # While the audio is still playing, select that greeting and delete it
+ # Observe the audio behavior
+
+*Actual result:* Audio continues to play after deleting any of the greetings until it finishes - see here [^]
+
+*Expected result:* Once a greeting or quick status is deleted, any ongoing audio playback should stop immediately, and the player should reset","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 11:20 PM;m13.hasan;Average3.mp4;https://jira.a1qa.com/secure/attachment/2650544/Average3.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if404g:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,"31/May/25 11:21 PM;m13.hasan;*Correction in the below:*
+
+*Summary:* Audio Playback: Audio continues to play after deleting a Greeting or Quick Status
+
+*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to any of the Greetings or Quick Status
+ # Tap the Play button to start audio playback 
+ # While the audio is still playing, select that Greeting or Quick Status and delete it
+ # Observe the audio behavior
+
+*Actual result:* Audio continues to play after deleting a Greeting or Quick Status until it finishes - see here [^Average3.mp4];;;",
+Time Format: Application consistently displays time in 24-hour format despite the device being set to 12-hour format,QATC-926350,3835002,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 22:57,04/Jun/25 22:09,05/Jun/25 23:17,04/Jun/25 22:09,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+
+ # Navigate to any of the Greetings and set a time using the 24-hour format
+
+ # Minimize the app and go to the Android device Settings
+
+ # Change the system Time Format to 12-hour (AM/PM)
+
+ # Return to the Get Personal Voicemail app and view the previously set time
+
+ # Observe the time format displayed in the app
+
+*Actual result:* Application consistently displays time in 24-hour format despite the device being set to 12-hour format - see here [^Average2.mp4]
+
+*Expected result:* The application should adapt to the device’s selected time format, displaying time in 12-hour format (with AM/PM) when that setting is applied","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 10:57 PM;m13.hasan;Average2-1.mp4;https://jira.a1qa.com/secure/attachment/2650541/Average2-1.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if4034:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,"31/May/25 11:03 PM;m13.hasan;*Correction:*
+
+Actual result: Application consistently displays time in 24-hour format despite the device being set to 12-hour format - see here [^Average2-1.mp4]
+
+*Steps:* 
+ # Open the Get Personal Voicemail app
+ # Navigate to any of the Greetings and set a time using the 24-hour format
+ # Minimize the app and go to the Android device Settings
+ # Change the system Time Format to 12-hour (AM/PM)
+ # Return to the Get Personal Voicemail app and view the previously set time
+ # Observe the time format displayed in the app;;;",04/Jun/25 10:09 PM;e.sheremetyev;minor;;;
+"App Layout: Application does not utilize full screen, leaving blank space on display",QATC-926348,3834999,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m13.hasan,m13.hasan,31/May/25 22:45,04/Jun/25 22:09,05/Jun/25 23:17,04/Jun/25 22:09,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Launch the Get Personal Voicemail app on any Android device
+ # Observe the screen layout on the home and settings screens
+ # Compare the app frame with the physical screen dimensions
+
+*Actual result:* Application does not utilize full screen, leaving blank space on display - see here [^Average1.mp4]
+
+*Expected result:* The application should adjust its layout responsively to fill the full screen height and width, ensuring an optimized display on all supported devices","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 10:44 PM;m13.hasan;Average1.mp4;https://jira.a1qa.com/secure/attachment/2650539/Average1.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,0|if402g:,9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Quick Status: 'Delete Status' button does not perform any action when tapped,QATC-926343,3834992,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 22:22,04/Jun/25 22:04,05/Jun/25 23:13,04/Jun/25 22:04,1,,Voicemail,,0,,"*Steps:*
+ # Open the Get Personal Voicemail app
+ # Navigate to the Quick Status section
+ # Select an existing quick status
+ # Tap the 'Delete Status' button
+
+*Actual result:* 'Delete Status' button does not perform any action when tapped - see here [^9th major.mp4]
+
+*Expected result:* Clicking the 'Delete Status' button should delete the selected status ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,31/May/25 10:22 PM;m13.hasan;9th major.mp4;https://jira.a1qa.com/secure/attachment/2650532/9th+major.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if4014:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:04 PM;e.sheremetyev;average;;;,
+Greetings & Quick Status: Maximum recording duration is 9 minutes instead of 9.59 minutes as required,QATC-926315,3834964,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 19:24,04/Jun/25 21:55,05/Jun/25 23:13,04/Jun/25 21:55,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Navigate to either the Greetings or Quick Status section
+ # Click Create new
+ # Tap ""Press to start"" for recording a new message
+ # Allow the recording to continue uninterrupted
+ # Observe the time when the recording stops automatically
+
+*Actual result:* Maximum recording duration is 9 minutes instead of 9.59 minutes as required - see here [^8th Major.mp4]
+
+*Expected result:* The system should have the capability of recording up to 9.59 minutes as defined in the requirements for both Greetings and Quick Status - see here [^Voicemail_record_v1_1c.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,31/May/25 7:15 PM;m13.hasan;8th Major.mp4;https://jira.a1qa.com/secure/attachment/2650486/8th+Major.mp4,31/May/25 7:23 PM;m13.hasan;Voicemail_record_v1_1c.png;https://jira.a1qa.com/secure/attachment/2650485/Voicemail_record_v1_1c.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zuw:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 9:55 PM;e.sheremetyev;average;;;,
+"Settings: ""Time before greeting"" dropdown resets to default value (5) after navigating back to the main page",QATC-926314,3834963,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 18:54,04/Jun/25 21:54,05/Jun/25 23:13,04/Jun/25 21:54,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Click the three dots in the top right corner and navigate to the Settings
+ # Locate the ""Time before greeting"" dropdown
+ # Change the value from 5 to any other (e.g., 10 or 15)
+ # Return to the main page, then go back to the same page
+ # Observe the dropdown value
+
+*Actual result:* ""Time before greeting"" dropdown resets to default value (5) after navigating back to the main page - see here [^7th major.mp4]
+
+*Expected result:* The app should store and reflect the user-selected value in the ""Time before greeting"" dropdown even after navigation","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,31/May/25 6:54 PM;m13.hasan;7th major.mp4;https://jira.a1qa.com/secure/attachment/2650484/7th+major.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zuo:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,,
+"Greetings: The app takes approximately 5 seconds to navigate the recipient page after clicking the ""Select a recipient"" button if the user does not go back instantly",QATC-926311,3834959,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 18:14,04/Jun/25 22:02,05/Jun/25 23:13,04/Jun/25 22:02,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Enter any greeting
+ # Click ""Select a recepient"" button
+ # Wait until the page is loading
+
+*Actual result:* The app takes approximately 5 seconds to navigate the recipient page after clicking the ""Select a recipient"" button if the user does not go back instantly - see here [^6th major.mp4]
+
+*Expected result:* The page should respond and load content immediately after clicking the recipient button to ensure a smooth user experience
+
+ ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 6:13 PM;m13.hasan;6th major.mp4;https://jira.a1qa.com/secure/attachment/2650475/6th+major.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zts:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:02 PM;e.sheremetyev;average;;;,
+Quick Status: Recording restarts when pausing and resuming during the creation of a new status,QATC-926309,3834955,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m13.hasan,m13.hasan,31/May/25 17:17,04/Jun/25 22:02,05/Jun/25 23:14,04/Jun/25 22:02,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Quick Status > Create new status
+ # Click ""PRESS TO START"" button
+ # Pause the recording and resume it 
+ # Pay attention to the response
+
+*Actual result:* Recording restarts when pausing and resuming during the creation of a new status - see here [^4th major.mp4]
+
+*Expected result:* Pausing and resuming should allow the recording to continue without restarting","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,31/May/25 5:15 PM;m13.hasan;5th major.mp4;https://jira.a1qa.com/secure/attachment/2650471/5th+major.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zsw:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:02 PM;e.sheremetyev;QATC-926308;;;,
+Greetings: Recording restarts when pausing and resuming during the creation of a new greeting,QATC-926308,3834954,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 17:03,04/Jun/25 22:02,05/Jun/25 23:14,04/Jun/25 22:02,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Greetings > Create new greeting
+ # Click ""PRESS TO START"" button
+ # Pause the recording and resume it 
+ # Pay attention to the response
+
+*Actual result:* Recording restarts when pausing and resuming during the creation of a new greeting - see here [^4th major.mp4]
+
+*Expected result:* Pausing and resuming should allow the recording to continue without restarting","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 5:02 PM;m13.hasan;4th major.mp4;https://jira.a1qa.com/secure/attachment/2650470/4th+major.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zso:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Create new greeting: Pause button causes page crash when tapped frequently,QATC-926305,3834947,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 16:14,04/Jun/25 22:03,05/Jun/25 23:15,04/Jun/25 22:03,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Click on ""Create new greeting"" 
+ # Click ""Press to start""
+ # Frequently tap the pause button
+ # Pay attention to the response
+
+*Actual result:* Pause button causes page crash when tapped frequently - see here [^3rd major.mp4]
+
+*Expected result:* Frequent tapping of the pause button should not cause a crash; the page should stay responsive","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,31/May/25 4:13 PM;m13.hasan;3rd major.mp4;https://jira.a1qa.com/secure/attachment/2650461/3rd+major.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zr4:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:03 PM;e.sheremetyev;average;;;,
+Settings: Purchase button does not trigger any action,QATC-926303,3834944,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 16:04,04/Jun/25 22:03,05/Jun/25 23:15,04/Jun/25 22:03,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Click the three dots on the top right side > Settings
+ # Click ""Purchase $2.99 
+ # Pay attention to the response
+
+*Actual result:* The Purchase button does not trigger any action, preventing the purchase from being completed - see here [^Purchase button.mp4]
+
+*Expected result:* Clicking the purchase button should initiate the payment process","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 4:03 PM;m13.hasan;Purchase button.mp4;https://jira.a1qa.com/secure/attachment/2650457/Purchase+button.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zqg:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,,
+Greetings: Greeting toggle automatically turns off when adding more than seven entries,QATC-926301,3834942,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 15:52,04/Jun/25 22:05,05/Jun/25 23:15,04/Jun/25 22:05,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # In greetings, add the 8th greeting - see here [^more than 7.mp4]
+ # Notice that the first greeting (if on) turns off automatically while scrolling down
+ # Add another greeting
+ # Notice that the second greeting also (if on) turns off automatically while scrolling down
+
+*Actual result:* Greeting toggle automatically turns off when adding more than seven entries - see here [^Automatically off while scroll down .mp4]
+
+*Expected result:* Adding new greetings should not affect the on state of existing ones while scrolling the greetings page","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,31/May/25 3:52 PM;m13.hasan;Automatically off while scroll down .mp4;https://jira.a1qa.com/secure/attachment/2650454/Automatically+off+while+scroll+down+.mp4,31/May/25 3:48 PM;m13.hasan;more than 7.mp4;https://jira.a1qa.com/secure/attachment/2650455/more+than+7.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zq0:,9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 10:05 PM;e.sheremetyev;average;;;,
+Quick Status: The Quick Status message doesn't play during incoming calls,QATC-926292,3834926,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m13.hasan,m13.hasan,31/May/25 13:51,04/Jun/25 21:54,05/Jun/25 23:12,04/Jun/25 21:54,1,,Voicemail,,0,,"*Steps:* 
+ # Open the Voicemail application
+ # Set a quick status message and ensure that the service is active in the settings - see here [^Screenshot_20250531_164809.png]
+ # Make an incoming call to the phone
+
+*Actual result:* The Quick Status message doesn't play during incoming calls - see here [^Critical- Status.mp4]
+
+*Expected result:*  The Quick Status message should play during incoming calls when the service is active","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,31/May/25 1:47 PM;m13.hasan;Critical- Status.mp4;https://jira.a1qa.com/secure/attachment/2650441/Critical-+Status.mp4,31/May/25 1:49 PM;m13.hasan;Screenshot_20250531_164809.png;https://jira.a1qa.com/secure/attachment/2650440/Screenshot_20250531_164809.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zmg:,9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0,,,,,04/Jun/25 9:54 PM;e.sheremetyev;QATC-926287;;;,
+Greetings: Greeting messages don't play during incoming calls,QATC-926287,3834920,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 13:35,04/Jun/25 21:54,05/Jun/25 23:12,04/Jun/25 21:54,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application
+ # Pay attention that greeting messages are active in the settings
+
+ # Assign a greeting message to a recipient or group
+
+ # Set an active time and date for when the greeting should be triggered
+
+ # Make an incoming call to the phone
+
+*Actual result:* Greeting messages do not play during incoming calls - see here [^Critical - Greetings doesn't work.mp4]
+
+*Expected result:* The greeting message should play automatically when an incoming call is received for assigned contacts or groups","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 1:33 PM;m13.hasan;Critical - Greetings 2.png;https://jira.a1qa.com/secure/attachment/2650430/Critical+-+Greetings+2.png,31/May/25 1:29 PM;m13.hasan;Critical - Greetings doesn't work.mp4;https://jira.a1qa.com/secure/attachment/2650433/Critical+-+Greetings+doesn%27t+work.mp4,31/May/25 1:33 PM;m13.hasan;Critical - Greetings1.png;https://jira.a1qa.com/secure/attachment/2650432/Critical+-+Greetings1.png,31/May/25 1:33 PM;m13.hasan;Critical- Greetings 3.png;https://jira.a1qa.com/secure/attachment/2650431/Critical-+Greetings+3.png,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zl4:,9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0,,,,,"31/May/25 1:36 PM;m13.hasan;*Steps in corrected order:*
+ # Open the Voicemail application
+ # Pay attention that greeting messages are active in the settings
+ # Assign a greeting message to a recipient or group
+ # Set an active time and date for when the greeting should be triggered
+ # Make an incoming call to the phone;;;",
+"Greetings: App crashes when entering greetings, selecting a recipient, and going back immediately",QATC-926282,3834915,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,31/May/25 13:07,04/Jun/25 21:53,05/Jun/25 23:12,04/Jun/25 21:53,1,,Voicemail,,0,,"*Steps:*
+ # Open the Voicemail application 
+ # Enter any greeting in the designated field
+
+ # Click the ""Select a recipient"" option
+
+ # Immediately try to return to the previous page
+
+ # Observe the response 
+
+*Actual result:* App crashes when entering greetings, selecting a recipient, and going back immediately - see here [^Critical- app crashes.mp4]
+
+*Expected result:*  The Voicemail application should function smoothly without crashing when entering a greeting, selecting a recipient, and navigating back","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,31/May/25 1:06 PM;m13.hasan;Critical- app crashes.mp4;https://jira.a1qa.com/secure/attachment/2650422/Critical-+app+crashes.mp4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,0|if3zk0:,9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0,,,,,"31/May/25 1:08 PM;m13.hasan;*Steps in corrected order:*
+ # Open the Voicemail application 
+ # Enter any greeting in the designated field
+ # Click the ""Select a recipient"" option
+ # Immediately try to return to the previous page
+ # Observe the response ;;;",
